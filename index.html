@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App | Web and Mobile Development</title>
+    <link rel="icon" href="./imgs/mlogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" 
+    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="body-container">
+        <header class="body-head">
+            <div class="body-head-div">
+                <h1 class="h1">
+                    Quiz
+                </h1>
+                <img class="logo" src="./imgs/mlogo.png" alt="">
+
+            </div>
+
+            <div class="opt-btn-div">
+
+                <button onclick="openMenu()" class="opt-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+                    </svg>
+                </button>
+                <div id="myMenu" class="dropdown-content">
+                    <a href="#home">Home</a>
+                    <a href="#result">Result</a>
+                    <!-- <a href="#"></a> -->
+                </div>
+            </div>
+        </header>
+        <div class="main-section">
+
+            <div class="">
+
+
+                    <h3 class="h3">ACCOUNT DETAILS</h3>
+
+                    <labe class="login-label">ENTER YOUR EMAIL</lebal><br>
+                        <input class="login-input" type="email" placeholder="ENTER YOUR EMAIL" id="email"><br>
+                        <label class="login-label">ENTER YOUR PASSWORD</label><br>
+                        <input class="login-input" type="password" placeholder="ENTER YOUR PASSWORD" id="password">
+                        <br>
+
+                        <button class="login-btn" onclick="create_login()">CREATE ACCOUNT</button>
+                </div> -->
+
+                <div class="login-page">
+                    <div class="form">
+        
+                        <form class="register-form " id="rigister-form"  >
+        
+                            <h2>Sign in</h2>
+        
+                            <div class="forminfo error" id="forminfo">
+                            <label for="username">Username</label>
+                            <input type="text" name="" class="username" id="username" placeholder="Enter username" required/><br>
+                            </div>
+        
+                            <div class="forminfo error" id="forminfo">
+                            <label class="email">Email</label>
+                            <input type="email" name="" class="email" id="create_email" placeholder="Enter email" required/><br>
+                            </div>
+        
+                            
+                            <div class="forminfo error"id="forminfo">
+                            <label class="password">Passord</label>
+                            <input type="password" name="" id="create_password" class="password" placeholder="Enter password" required/><br>
+                            </div>
+                        
+        
+                            <button class="button" onclick='quiz( )'>Create</button><br>
+        
+                            <p class="message" id="message" >Already Register?<a href="#" >Register</a></p>
+          
+                        </form>
+        
+                        <dic class="signup-form" id="signup-form" >
+          
+                            <h2>Login</h2>
+          
+                            <input type="email" placeholder="email" id="email1" required /><br>
+                            <input type="password" placeholder="Enter password" id="password1" required/><br>
+                            <button class="button" onclick="login()">Login up</button><br>
+        
+                            <p class="message" id="message" >Not Register?<a href="#">Sign up</a></p>
+        
+                        </div>
+          
+        
+                    </div>
+                </div> 
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    </div>
+    <div class="footer-img">
+        <img class="footer-bg-img" src="./imgs/footer-img.png" alt="">
+        <div class="footer">
+
+            <img class="button-logo" src="./imgs/mlogo.png" alt="">
+            <span class="footer-span">
+                Quiz App by Ghulam Mustafa | 2022
+            </span>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script >
+    $('.message a').click(function(){
+        $('form').animate({height: "toggle" , opacity: "toggle"}, "medium");
+    });
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
