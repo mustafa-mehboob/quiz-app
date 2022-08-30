@@ -85,10 +85,7 @@ body {
   .opt-btn-div a:hover {background-color: #ddd;}
   
   .show {display: block;}
-
-
-
-
+  
 .main-section {
     width: 100%;
     height: 70%;
@@ -110,7 +107,6 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    /* margin: 2% 0; */
     position: relative;
 }
 
@@ -127,19 +123,13 @@ body {
     width: 50%;
     height: 80%;
     fill: #71afff;
-    /* margin: 4%; */
     transition: transform .2s;
 }
 
 .q-div-hover svg:hover {
     -ms-transform: scale(1);
-    /* IE 9 */
     -webkit-transform: scale(1);
-    /* Safari 3-8 */
     transform: scale(1.3);
-    /* width: 40%;
-    height: 40%;
-    transition: all .2s ease-in; */
 }
 
 .h4 {
@@ -152,7 +142,6 @@ body {
 .btn-quiz {
     border: none;
     background-color: transparent;
-
 }
 
 .footer {
@@ -163,19 +152,10 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-
-
-
     display: flex;
     justify-content: center;
-    /* left: 0; */
-    /* margin-bottom: 1%; */
     bottom: 6px;
-    /* top: -17px; */
-    /* width: 100%; */
-    /* z-index: 2;*/
-
-}
+ }
 
 .button-logo {
     width: 1%;
@@ -183,16 +163,11 @@ body {
 }
 
 .footer-img {
-    /* background-color: white; 
-    background-image: linear-gradient(white, rgb(85, 98, 212)); */
-    /* width: 100%;
-    margin-bottom: -0%; */
-
-
+    position: relative;
+    left: 0;
+    bottom: 0;
     margin: 0;
-
     width: 100%;
-
 }
 
 .footer-bg-img {
@@ -200,7 +175,6 @@ body {
     position: relative;
     top: 21px;
     height: 23vh;
-
 }
 
 .footer-span {
